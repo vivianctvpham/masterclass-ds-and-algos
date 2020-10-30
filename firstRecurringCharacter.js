@@ -10,22 +10,18 @@
 
 
 function firstRecurringCharacter(input) {
-    if (!input || input.length < 2) return undefined;
-
     let counter = {};
-    let result;
 
     for (let i = 0; i < input.length; i++) {
         let number = input[i];
         if (counter[number]) {
-            result = number;
-            break;
+            return number
         } else {
             counter[number] = 1;
         }
     }
 
-    return result;
+    return undefined;
 
 }
 
