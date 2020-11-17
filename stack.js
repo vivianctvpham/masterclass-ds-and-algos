@@ -97,8 +97,8 @@ function main () {
     myArrayStack.push('Udemy');
     myArrayStack.push('Discord');
     myArrayStack.pop();
-    myArrayStack.pop();
-    myArrayStack.pop();
+    // myArrayStack.pop();
+    // myArrayStack.pop();
     console.log(myArrayStack.peek())
     console.log(myArrayStack)
 }
